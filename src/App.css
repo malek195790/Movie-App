@@ -2,32 +2,232 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+/* header */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  box-shadow: 0px 3px 21px 0px rgba(0,0,0,0.25);
+  padding: 0 80px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.imgsize{
+  height: 50px;
+}
+
+.websitetitle{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  color: #024253;
+  font-size: 36px;
+  margin: 0;
+  height: 50px;
+  padding-left: 10px;
+}
+
+.logodisplay{
+  display: flex;
+  align-items: center;
+}
+
+.navmenu{
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.navmenu li span {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: #024253;
+  font-size: 16px;
+  font-weight: 500;
+  width: 90px;
+  margin: 0 15px;
+  margin-top: 2px;
+  height: 70px;
+}
+
+.navmenu li span:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #024253;
+  font-size: 16px;
+  font-weight: 500;
+  width: 90px;
+  padding-top: 5px;
+  margin: 0 15px;
+  height: 70px;
+  border-bottom: 2px solid #024253;
+}
+
+.searchmenu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbox{
+  height: 30px;
+  width: 300px;
+  border: 0;
+  font-size: 16px;
+  border: 0.5px solid #024253;;
+  padding: 5px 10px;
+  background-color: rgba(244,243,225,0.2);
+}
+
+.styleIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
+  height: 30px;
+  border: 0;
+  font-size: 16px;
+  border: 0.5px solid #024253;
+  padding: 5px 10px;
+  background-color: #024253;
 }
 
-.App-link {
-  color: #61dafb;
+.rateSearch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #024253;
+  font-size: 16px;
+  font-weight: 500;
+  width: 240px;
+  height: 70px;
+  margin-top: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rateSearch label {
+  margin: 0;
+  padding: 0 15px;
 }
+
+.rateSearch:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #024253;
+  font-size: 16px;
+  font-weight: 500;
+  width: 240px;
+  padding-top: 2px;
+  height: 70px;
+  border-bottom: 2px solid #024253;
+}
+
+
+/* Movies */
+
+.movies-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 0 0 200px;
+}
+
+.movies-container h1 {
+  color: #024253;
+  margin: 20px 0 0;
+  font-size: 25px;
+}
+
+
+/* Movie Box */
+
+.movie-box{
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1500px;
+}
+
+.movie-box ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 180px;
+  padding: 0;
+  margin: 10px 15px;
+}
+
+.movie-box li {
+  width: auto;
+  margin: 0;
+}
+
+.movie-box h3 {
+  margin: 10px 0;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #024253;
+}
+
+.movie-cover{
+  height: 230px;
+  width: 160px;
+}
+
+.img-container{
+  height: 240px;
+}
+
+.colorRate{
+  color: #FFD700;
+}
+
+.uncolorRate{
+  color: rgba(171,171,171,0.4);
+}
+
+.buttonAdd{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+
+/* Modal container */
+
+.modalContainer{
+  display: flex;
+}
+
+.inputName {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 3px 0 0;
+}
+
+.inputName span {
+  height: 40px;
+  margin: 4px 0;
+}
+
+.inputUser {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.inputUser input {
+  margin: 8px 0;
+}
+
